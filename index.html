@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1 class="heading">Sorting Visualizer</h1>
+    <div id="container"></div>
+
+    <div class="bottom">
+        <div class="slidecontainer">
+            <p class="texts">Value:</p>
+            <p class="texts"> <span id="demo"></span></p>
+            <input type="range" min="10" max="100" value="50" class="slider" id="myRange">
+        </div>
+    
+        <div id="buttons">
+            <button onclick="bubble_sort()">Bubble Sort</button>
+            <button onclick="selection_sort()">Selection Sort</button>
+            <button onclick="quick_sort()">Quick Sort</button>
+            <div class="button-group">
+                <button onclick="stop()" id="stop_btn">Stop</button>
+                <button onclick="restart()" id="restartButton">Restart</button>
+            </div>
+            <button onclick="start()" id="start_btn">Start</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
